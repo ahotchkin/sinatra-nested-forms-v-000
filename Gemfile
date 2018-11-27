@@ -5,6 +5,7 @@ gem 'sinatra-reloader', require: false
 gem 'activerecord', require: 'active_record'
 gem 'sinatra-activerecord', require: 'sinatra-activerecord'
 gem 'sqlite3'
+gem 'rake'
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
