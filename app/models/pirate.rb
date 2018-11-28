@@ -1,17 +1,19 @@
-class Pirate
-  attr_reader :name, :weight, :height
+class Pirate <ActiveRecord::Base
+  has_many :ships
 
-  @@pirates = []
-
-  def initialize(params)
-    @name = params[:name]
-    @weight = params[:weight]
-    @height = params[:height]
-    @@pirates << self
-  end
-
-  def self.all
-    @@pirates
-  end
+  # attr_reader :name, :weight, :height
+  #
+  # @@pirates = []
+  #
+  # def initialize(params)
+  #   @name = params[:name]
+  #   @weight = params[:weight]
+  #   @height = params[:height]
+  #   @@pirates << self
+  # end
+  #
+  # def self.all
+  #   @@pirates
+  # end
 
 end
